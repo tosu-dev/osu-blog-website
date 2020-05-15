@@ -1,0 +1,202 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+  display: table;
+  width: 100%;
+  background-color: #212121;
+}
+
+/* FONT FACE */
+@font-face {
+    font-family: "Alatsi";
+    src: url("fonts/Altasi/Alatsi-Regular.ttf");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: "Cabin";
+    src: url("fonts/Cabin/Cabin-Regular.ttf");
+}
+@font-face {
+    font-family: "Alata";
+    src: url("fonts/Alata/Alata-Regular.ttf");
+}
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato/Lato-Thin.ttf");
+}
+
+/* HEADER */
+header{
+    background-color: #2C2C2C;
+    height: 100px;
+    line-height: 100px;
+}
+header .inner{
+    height: 100%;
+    width: 75%;
+    margin: auto;
+}
+.left-conteneur{
+  width: 50%;
+  height: 80px;
+  float: left;
+}
+.top-left-menu img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    transition: 0.5s;
+}
+.top-left-menu img:hover{
+    transform: translateX(80px) rotate(1turn);
+}
+.top-right-menu{
+    width: 33%;
+    float: right;
+    height: 100%;
+}
+.top-right-menu nav{
+    display: flex;
+    justify-content: space-around;
+    text-transform: capitalize;
+}
+.top-right-menu nav a{
+    display: inline-block;
+    color: white;
+    padding: 0px 25px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: none;
+    font-family: "Roboto", Arial, "Lato";
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+.top-right-menu nav a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: white;
+  height: 5px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.top-right-menu nav a:hover:before, .top-right-menu nav a:focus:before, .top-right-menu nav a:active:before {
+  right: 0;
+
+}
+
+/* IMAGES APRES HEADER*/
+.osu-img{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+/* body-center */
+.body-center{
+    color: white;
+}
+.body-center nav{
+    background-color: none;
+    display: inline-block;
+    width: 20;
+    margin-left: 3%;
+    text-transform: capitalize;
+}
+.body-center nav li{
+    list-style-type: circle;
+}
+.body-center nav a{
+    color: #888888;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.body-center nav a:hover{
+    color: white;
+    border-right: 4px solid white;
+    padding-right: 10px;
+}
+.body-center h1 a{
+    font-size: 2em;
+    font-family: "Alata", Arial;
+    text-transform: uppercase;
+    text-decoration: overline;
+    color: white;
+    border-right: 6px solid #212121;
+    padding-right: 0px;
+    transition: 0.3s;
+}
+.body-center h2 a{
+    font-size: 2em;
+    font-family: "Alata", Arial;
+    text-transform: uppercase;
+    text-decoration: overline;
+    color: white;
+    border-right: 6px solid #212121;
+    padding-right: 0px;
+    transition: 0.3s;
+}
+.body-center p, li{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-family: "Lato", "Cabin";
+}
+.body-artc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    float: right;
+    margin-right: 10px;
+}
+.body-artc h1 a:hover{
+    border-right: 6px solid white;
+    padding-right: 25px;
+}
+.body-artc h2 a:hover{
+    border-right: 6px solid white;
+    padding-right: 25px;
+}
+
+.beatmaps h3{
+    font-family: "Cabin", "Arial";
+    font-size: 1.8em;
+}
+.flag{
+    margin-left: 3%;
+    width: 50px;
+    height: 33px;
+}
+
+
+/* FOOTER */
+footer{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    background-color: #111111;
+    width: 100%;
+    line-height: 100px;
+    height: px;
+}
+footer .copyright{
+    font-family: Arial;
+    font-size: 0.7em;
+}
