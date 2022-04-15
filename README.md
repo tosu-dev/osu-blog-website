@@ -1,8 +1,7 @@
 # osu-blog-website
-An osu! blog I created for my school work.
 
-I'm in highschool, and I have informatics classes. I had to do a website about something we like. I decided to do a website about osu!. I decided to put in GitHub for several reasons :
+This a website that I had to create for a school project in 2019, I was in my 2nd highschool year.
 
-1. I'm learning how GitHub works
-2. To share what I've done
-3. If I want to change the website
+We had to create a website in HTML/CSS about something we like, so I did it about "osu!".
+
+If you want to discover what is "osu!", check the website.
